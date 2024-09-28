@@ -5,3 +5,15 @@ const rl = readline.createInterface({
     output: process.stdout,
 })
 
+rl.question("Sisestage Leedu perenimi: ", nimi =>{
+    if (nimi.slice(-2) == "ne"){
+        console.log("Abielus")
+    } else if (nimi.slice(-2) == "te"){
+        console.log("Vallaline")
+    } else if (nimi.slice(-1) == "e"){
+        console.log("Määramata")
+    } else { 
+            console.log("Pole leedulanna")
+        }
+    rl.close()
+})
