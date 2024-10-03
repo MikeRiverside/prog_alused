@@ -5,11 +5,13 @@ const rl = readline.createInterface({
     output: process.stdout,
 });
 
-rl.question("Sisestage ringide arv: ", ringid=> {
-    for (let porgand = 0; kord <= äratamisKordus; kord++){
-        console.log(porgand)
+rl.question("Mitu ringi jooksid?", vastus=> {
+let summa = 0
+for (let ring = 1; ring <= vastus; ring++ ) {
+    if (ring % 2 == 0){
+        summa = summa + ring
     }
-   
-    rl.close()
-    
-}) 
+
+} rl.close(console.log(`Porgantide koguarv ${summa}`))
+
+})

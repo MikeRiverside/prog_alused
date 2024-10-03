@@ -6,6 +6,7 @@ const rl = readline.createInterface({
 });
 
 rl.question("Mitu korda ma sind äratan?", äratamisKordus=> {
+    let kord = 1
     while (kord <= äratamisKordus) {
         console.log("Tõuse ja sära!")
         kord++
